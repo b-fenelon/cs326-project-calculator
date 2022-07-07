@@ -4,8 +4,74 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Just Lift Homepage</title>
+    <script type="module" src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class ="container" id="weights">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <button class="active nav-link active" href="#pound-options" data-bs-toggle="tab" type="button" role="tab" aria-controls="pounds" aria-selected="true">Pounds (lbs)</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" href="#kilogram-options" data-bs-toggle="tab" type="button" role="tab" aria-controls="kilograms" aria-selected="false">Kilograms (kg)</button>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="pound-options" class="tab-pane active">
+                <h5>Enter Available Pounds Plates:</h5>
+                <label for="45lbs">45lb pairs: </label><input type="number" id="45lbs" value="0" min="0" max="20"/>
+                <label for="35lbs">35lb pairs: </label><input type="number" id="35lbs" value="0" min="0" max="20"/>
+                <label for="25lbs">25lb pairs: </label><input type="number" id="25lbs" value="0" min="0" max="20"/>
+                <label for="10lbs">10lb pairs: </label><input type="number" id="10lbs" value="0" min="0" max="20"/>
+                <label for="5lbs">5lb pairs: </label><input type="number" id="5lbs" value="0" min="0" max="20"/>
+                <label for="2-5lbs">2.5lb pairs: </label><input type="number" id="2-5lbs" value="0" min="0" max="20"/>
+            </div>
+            <div id="kilogram-options" class="tab-pane">
+                <h5>Enter Available Kilogram Plates:</h5>
+                <label for="25kgs">25kg pairs: </label><input type="number" id="25kgs" value="0" min="0" max="20"/>
+                <label for="20kgs">20kg pairs: </label><input type="number" id="20kgs" value="0" min="0" max="20"/>
+                <label for="15kgs">15kg pairs: </label><input type="number" id="15kgs" value="0" min="0" max="20"/>
+                <label for="10kgs">10kg pairs: </label><input type="number" id="10kgs" value="0" min="0" max="20"/>
+                <label for="5kgs">5kg pairs: </label><input type="number" id="5kgs" value="0" min="0" max="20"/>
+                <label for="2-5kgs">2.5kg pairs: </label><input type="number" id="2-5kgs" value="0" min="0" max="20"/>
+                <label for="1-25kgs">1.25kg pairs: </label><input type="number" id="1-25kgs" value="0" min="0" max="20"/>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="cards">
+        <input type="button" value="Add Exercise" id="add">
+        <div class="card">
+            <input type="text" id="exercise-name" value="Exercise"/>
+            <div class="card-body">
+                <div id="row-entry">
+                    <label for="set-number">Sets: </label><input type="number" id="set-number"/>
+                    <label for="rep-number">Reps: </label><input type="number" id="rep-number"/>
+                    <label for="weight-number">Weight: </label><input type="number" id="weight-number"/>
+                    <select id="unit">
+                        <option value="lbs">lbs</option>
+                        <option value="kgs">kgs</option>
+                    </select>
+                </div>
+                <div id="bar-graphic">
+                    <p> <strong>Load: 45-25</strong> </p>
+                </div>
+                <div id="row-entry">
+                    <label for="set-number">Sets: </label><input type="number" id="set-number"/>
+                    <label for="rep-number">Reps: </label><input type="number" id="rep-number"/>
+                    <label for="weight-number">Weight: </label><input type="number" id="weight-number"/>
+                    <select id="unit">
+                        <option value="lbs">lbs</option>
+                        <option value="kgs">kgs</option>
+                    </select>
+                </div>
+                <div id="bar-graphic">
+                    <p> <strong>Load: 45-10-5</strong> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
