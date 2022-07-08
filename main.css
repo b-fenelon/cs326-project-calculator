@@ -39,6 +39,10 @@
     text-align: center;
 }
 
+#add-set {
+    display: flex;
+}
+
 input[type='number'] {
   width: 50px;
   margin-left: .5em;
