@@ -1,0 +1,46 @@
+
+.tab-content{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#add-card {
+    font-size:large;
+
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#card {
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid black;
+
+    margin: .25em;
+    padding: 1em;
+
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+#exercise-name {
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: bold;
+
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+#card-body {
+    text-align: center;
+}
+
+input[type='number'] {
+  width: 50px;
+  margin-left: .5em;
+  margin-right: .5em;
+}

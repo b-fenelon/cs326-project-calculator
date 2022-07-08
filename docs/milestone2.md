@@ -7,4 +7,3 @@ Users will have the ability to:
 * Type in text box to name exercise
 * Add repetitions to an exercise card by the add set button 
 * Type in text box to write desired weight and closest possible weight will be displayed with one side of a barbell shown to instruct loading
-* If possible, a start button can indicate the start time of an exercise and will trigger a timer to show users how long certain weights have been in use
